@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- top navigation bar -->
+    <div class="navigation container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <a href="#" class="navbar-brand">Task Manager</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapse"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="collapse">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="profile.html">Profile</a></li>
+                    <li><a class="nav-link" href="calendar.html">Calendar</a></li>
+                    <li><a class="nav-link" href="notes.html">Notes</a></li>
+                    <li><a class="nav-link" href="settings.html">Settings</a></li>
+                    <li><button type="button" class="btn btn-outline-dark" onclick="location.href='login.html'">Sign
+                            out</button></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- main content -->
+    <div class="main container-fluid">
+        <div class="content row">
+            <!-- left side navigation -->
+            <div class="sidenav col-md-2 text-light text-center">
+                <h2>Activities</h2>
+                <hr />
+                <h4>TASKS</h4>
+                <a class="nav-link" href="tasks-imp.html"><i class="bi bi-star"></i> Important</a>
+                <a class="nav-link" href="tasks-all.html"><i class="bi bi-list-task"></i> All</a>
+                <a class="nav-link" href="tasks-next.html"><i class="bi bi-calendar3-week"></i> Next 7 days</a>
+                <a class="nav-link" href="tasks-all.html"><i class="bi bi-plus-circle"></i> Add new task</a>
+                <hr />
+                <h4>LISTS</h4>
+                <a class="nav-link" href="#"><i class="bi bi-chevron-right"></i> Project one</a>
+                <a class="nav-link" href="#"><i class="bi bi-chevron-right"></i> Project two</a>
+                <a class="nav-link" href="#"><i class="bi bi-plus-circle"></i> Add new list</a>
+                <form class="search-activity d-flex" style="margin-top: 19.5em;">
+                    <input class="search-activity-button form-control me-2" type="search"
+                        placeholder="Search activities" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+            <!-- main div -->
+            <div class="container col-md-10 my-3 py-2 px-4">
+                <h1 class="welcome-text" style="margin: 0;">Your profile</h1>
+                <div class="profile-wrapper d-flex justify-content-center align-items-center">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <div class="form-group mx-3">
+                                <img src="images/profile.png" alt="Profile Picture"
+                                    style="border-radius: 2em; margin-bottom: 1em; width: 10rem;">
+                                <h2>Joe Smith</h2>
+                                <p class="my-1">Member since 2023-01-05</p>
+                            </div>
+                            <div class="form-group d-flex flex-column align-items-center">
+                                <label for="tasks" class="mr-3 my-1">Tasks Completed:</label>
+                                <input type="text" class="form-control" id="tasks" value="10" readonly
+                                    style="width: 3rem;">
+                            </div>
+                            <div class="form-group m-3">
+                                <label class="btn btn-primary">
+                                    <i class="bi bi-images"></i> Upload profile picture<input type="file"
+                                        style="display: none;" name="image">
+                                </label>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="btn btn-primary mx-3">Save</button>
+                                <button type="submit" class="btn btn-danger">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer container-fluid">
+        <footer class="navbar navbar-expand-md navbar-light">
+            <a href="#" class="navbar-brand">Task Manager © 2023</a>
+            <ul class="navbar-nav ms-auto text-center">
+                <li><a class="nav-link" href="#">Product</a></li>
+                <li><a class="nav-link" href="#">Features</a></li>
+                <li><a class="nav-link" href="#">Resources</a></li>
+                <li><a class="nav-link" href="#">Company</a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

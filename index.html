@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <script type="text/javascript" src="js/script.js"> </script>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- top navigation bar -->
+    <div class="navigation container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <a href="#" class="navbar-brand">Task Manager</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapse"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="collapse">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="profile.html">Profile</a></li>
+                    <li><a class="nav-link" href="calendar.html">Calendar</a></li>
+                    <li><a class="nav-link" href="notes.html">Notes</a></li>
+                    <li><a class="nav-link" href="settings.html">Settings</a></li>
+                    <li><button type="button" class="btn btn-outline-dark" onclick="location.href='login.html'">Sign
+                            out</button></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- main content -->
+    <div class="main container-fluid">
+        <div class="content row">
+            <!-- left side navigation -->
+            <div class="sidenav col-md-2 text-light text-center">
+                <h2>Activities</h2>
+                <hr />
+                <h4>TASKS</h4>
+                <a class="nav-link" href="tasks-imp.html"><i class="bi bi-star"></i> Important</a>
+                <a class="nav-link" href="tasks-all.html"><i class="bi bi-list-task"></i> All</a>
+                <a class="nav-link" href="tasks-next.html"><i class="bi bi-calendar3-week"></i> Next 7 days</a>
+                <a class="nav-link" href="tasks-all.html"><i class="bi bi-plus-circle"></i> Add new task</a>
+                <hr />
+                <h4>LISTS</h4>
+                <a class="nav-link" href="#"><i class="bi bi-chevron-right"></i> Project one</a>
+                <a class="nav-link" href="#"><i class="bi bi-chevron-right"></i> Project two</a>
+                <a class="nav-link" href="#"><i class="bi bi-plus-circle"></i> Add new list</a>
+                <form class="search-activity d-flex" style="margin-top: 19.5em;">
+                    <input class="search-activity-button form-control me-2" type="search"
+                        placeholder="Search activities" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+            <!-- main div -->
+            <div class="content-left col-md-5 py-4 px-4">
+                <h1 class="welcome-text">Good morning, Joe!</h1>
+                <h4><i class="bi bi-bell"></i> Today's activities:</h4>
+                <div class="content-left-activities">
+                    <p><i class="bi bi-three-dots-vertical"></i>9:30 - Start working on a project</p>
+                    <p><i class="bi bi-three-dots-vertical"></i>12:30 - Barber appointment</p>
+                    <p><i class="bi bi-three-dots-vertical"></i>19:00 - MMA training at Victoria Park</p>
+                </div>
+                <button type="submit" class="content-left-button btn btn-outline-light"><i
+                        class="bi bi-plus-circle"></i> Add new task</button>
+                <h4><i class="bi bi-bookmarks"></i> Pinned reminders:</h4>
+                <div class="content-left-activities">
+                    <p><i class="bi bi-three-dots-vertical"></i> In 17 days - Football match</p>
+                    <p><i class="bi bi-three-dots-vertical"></i> In 84 days - Bob's wedding</p>
+                </div>
+                <button type="submit" class="content-left-button btn btn-outline-light"><i
+                        class="bi bi-plus-circle"></i> Add new reminder</button>
+            </div>
+            <!-- weather and time -->
+            <div class="content-right col-md-5 d-flex flex-column justify-content-center align-items-center">
+                <div class="weather">
+                    <div class="card">
+                        <div class="card-body p-3">
+                            <div class="d-flex">
+                                <h6 class="flex-grow-1">Warsaw</h6>
+                                <h6>15:07</h6>
+                            </div>
+
+                            <div class="d-flex flex-column text-center">
+                                <h6 class="display-5 mb-0 font-weight-bold" style="color: #1C2331;"> 13°C </h6>
+                                <span class="small" style="color: #868B94">Stormy</span>
+                            </div>
+
+                            <div class="d-flex align-items-center">
+                                <div class="flex-grow-1" style="font-size: 1rem;">
+                                    <div><i class="fas fa-wind fa-fw" style="color: #868B94;"></i> <span class="ms-1">
+                                            40 km/h </span></div>
+                                    <div><i class="fas fa-tint fa-fw" style="color: #868B94;"></i> <span class="ms-1">
+                                            84% </span></div>
+                                    <div><i class="fas fa-sun fa-fw" style="color: #868B94;"></i> <span class="ms-1">
+                                            0.2h </span></div>
+                                </div>
+                                <div>
+                                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
+                                        width="80px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar">
+                    <div class="calendar-wrapper">
+                        <span class="calendar-title">April 2023</span>
+                        <i class="bi bi-chevron-up"></i>
+                        <i class="bi bi-chevron-down"></i>
+                    </div>
+                    <div class="calendar-wrapper-items">
+                        <div class="day-name">Sun</div>
+                        <div class="day-name">Mon</div>
+                        <div class="day-name">Tue</div>
+                        <div class="day-name">Wed</div>
+                        <div class="day-name">Thu</div>
+                        <div class="day-name">Fri</div>
+                        <div class="day-name">Sat</div>
+                        <div class="day"></div>
+                        <div class="day"></div>
+                        <div class="day"></div>
+                        <div class="day"></div>
+                        <div class="day"></div>
+                        <div class="day">1</div>
+                        <div class="day">2</div>
+                        <div class="day">3</div>
+                        <div class="day">4</div>
+                        <div class="day">5</div>
+                        <div class="day">6</div>
+                        <div class="day">7</div>
+                        <div class="day">8</div>
+                        <div class="day">9</div>
+                        <div class="day">10</div>
+                        <div class="day">11</div>
+                        <div class="day">12</div>
+                        <div class="day">13</div>
+                        <div class="day">14</div>
+                        <div class="day">15</div>
+                        <div class="day">16</div>
+                        <div class="day">17</div>
+                        <div class="day-active">18</div>
+                        <div class="day">19</div>
+                        <div class="day">20</div>
+                        <div class="day">21</div>
+                        <div class="day">22</div>
+                        <div class="day">23</div>
+                        <div class="day">24</div>
+                        <div class="day">25</div>
+                        <div class="day">26</div>
+                        <div class="day">27</div>
+                        <div class="day">28</div>
+                        <div class="day">29</div>
+                        <div class="day">30</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer container-fluid">
+        <footer class="navbar navbar-expand-md navbar-light">
+            <a href="#" class="navbar-brand">Task Manager © 2023</a>
+            <ul class="navbar-nav ms-auto text-center">
+                <li><a class="nav-link" href="#">Product</a></li>
+                <li><a class="nav-link" href="#">Features</a></li>
+                <li><a class="nav-link" href="#">Resources</a></li>
+                <li><a class="nav-link" href="#">Company</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
